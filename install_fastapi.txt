@@ -1,0 +1,5 @@
+3 ways to install fastapi
+
+1. with standard optional dependencies -- pip install "fastapi[standard]" - this installs with some dependencies and fastapi-cloud-cli which are all optional
+2. without standard dependencies - pip install fastapi
+3. with standard dependencies but without fastapi-cloud-cli - pip install "fastapi[standard-no-fastapi-cloud-cli]"
