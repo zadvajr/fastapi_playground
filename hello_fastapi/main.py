@@ -4,6 +4,6 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-async def root():
-    """root function"""
+async def home():
+    """root endpoint"""
     return {"message": "Hello FastAPI!"}
