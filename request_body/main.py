@@ -8,10 +8,13 @@ class Item(BaseModel):
     description: str | None = None
     price: float
     tax: float | None = None
-    
+
+items = []
+
 app = FastAPI()
 
-@app.get("/items")
+@app.post("/items")
 async def get_items(item: Item):
     """get items"""
-    return item
+    items.append(item)
+    return items
